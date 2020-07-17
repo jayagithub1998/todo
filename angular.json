@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Tododlist"
+    }
+  },
+  "defaultProject": "Tododlist",
+  "cli": {
+    "analytics": false
+  }
 }

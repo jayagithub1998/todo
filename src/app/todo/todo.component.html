@@ -1,0 +1,27 @@
+<table border="1px" width="50%">
+    <thead>
+        <th>Todo</th>
+        <th>Tomorrow</th>
+    </thead>
+    <tr>
+        <div>
+            <td><input type="text" name="task" placeholder="Enter task" value={{task}} (input)="task=$event.target.value">
+                <button (click)="addTask()">+</button></td>
+                <ol>
+                    <li *ngFor ="let i of todo">
+                       <div>{{i}}
+                        <button (click)="removeTask(i)">remove</button>
+                        <button (click)="moveTask(i)">move</button>
+                        </div>
+                    </li>
+                </ol>
+        </div>
+        <td>
+            <ol>
+                <li *ngFor ="let i of tomor">
+                    <div>{{i}}</div>
+                </li>
+            </ol>
+        </td>
+    </tr>
+</table>
